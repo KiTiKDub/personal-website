@@ -1,0 +1,117 @@
+.header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(103, 74, 221);
+  }
+  
+  .left-side {
+    padding-left: 10px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-family: 'My Soul', cursive; 
+    font-size: 32px;
+  }
+  
+  .center {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(103, 74, 221);
+    white-space: nowrap;
+  }
+  
+  .nav-linkedin,
+  .nav-soundcloud,
+  .nav-projects,
+  .nav-resume {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 150px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: background-color .25s, border-top .25s, font-weight .25s;
+  }
+  
+  .nav-projects {
+    font-size: 28px;
+  
+  }
+  
+  /* possibly change to grid to make text bold on hover */
+  .nav-linkedin:hover,
+  .nav-soundcloud:hover,
+  .nav-projects:hover,
+  .nav-store:hover,
+  .nav-resume:hover {
+    cursor: pointer;
+    border-top: 5px solid rgb(103, 74, 221);
+    border-bottom: 5px solid rgb(35, 35, 35);
+    background-color: rgb(35, 35, 35);
+    font-weight: 500;
+    
+  }
+  
+  .right-side {
+    display:flex;
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .music-home {
+    width: 64px;
+  }
+  
+  /* Make background interesting*/
+  .main-page-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    column-gap: 10px;
+  }
+
+  .project-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+  .project-title-top {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 36px;
+  }
+
+  .partical-explosion {
+      width: 100%;
+      Height: 500px;
+      border: none;
+  }
+
+  .simple-eq {
+      width: 100%;
+      height: 500px;
+      border: none;
+  }
+
+  .home-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .middle {
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+  }

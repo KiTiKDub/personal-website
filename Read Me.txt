@@ -1,0 +1,9 @@
+Simple 3 band EQ was createad in conjuction with madkatmusic at Programming for Musicains
+
+While not a one to one copy, most of the code was followed from a tutorial, hence why its free.
+
+The source code can be found on github here: https://github.com/KiTiKDub/SimpleEQ
+
+To install: Copy/cut vst3 file to where you host your other plugins and have DAW search for new plugins. Most vst3 files are located at C:\Program Files\Common Files\VST3
+
+If you would like to learn how to code plugins using the JUCE framework, check out programmingformusicians.com

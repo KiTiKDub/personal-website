@@ -1,0 +1,153 @@
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(103, 74, 221);
+}
+
+.left-side {
+  padding-left: 10px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-family: 'My Soul', cursive; 
+  font-size: 32px;
+}
+
+.center {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(103, 74, 221);
+  white-space: nowrap;
+}
+
+.nav-linkedin,
+.nav-soundcloud,
+.nav-store,
+.nav-resume {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: black;
+  color: white;
+  height: 80px;
+  width: 150px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: background-color .25s, border-top .25s;
+}
+
+.nav-projects {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-color: black;
+  color: white;
+  height: 80px;
+  width: 150px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  transition: background-color .25s, border-top .25s, font-weight .25s;
+
+}
+
+/* possibly change to grid to make text bold on hover */
+.nav-linkedin:hover,
+.nav-soundcloud:hover,
+.nav-projects:hover,
+.nav-store:hover,
+.nav-resume:hover {
+  cursor: pointer;
+  border-top: 5px solid rgb(103, 74, 221);
+  border-bottom: 5px solid rgb(35, 35, 35);
+  background-color: rgb(35, 35, 35);
+  font-weight: 500;
+  
+}
+
+.right-side {
+  display:flex;
+  flex: 1;
+  align-items: center;
+  justify-content: end;
+}
+
+.music-home {
+  width: 64px;
+}
+
+
+.main-page-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.text-body {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  tab-size: 2;
+}
+
+
+.pictures-info {
+  display:grid;
+  grid-template-rows: 250px 125px;
+  row-gap: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  justify-items: center;
+  background-color: black;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.profile-pic {
+  width: 250px;
+  border-radius: 125px;
+  border: 3px solid rgb(103, 74, 221);
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+}
+
+.three-below {
+  display:grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.combined-middle-header {
+  padding-top: 25px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+}
+
+.contact-me {
+  display:flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.contact-me input, .contact-me textarea, .contact-me button {
+  padding:20px;
+  margin:20px;
+  outline:none;
+  border:none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.contact-me button {
+  cursor: pointer;
+}
