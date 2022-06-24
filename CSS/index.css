@@ -138,6 +138,9 @@
   flex-direction: column;
   background-color: black;
   border-radius: 15px;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
 }
 
 .contact-me input, .contact-me textarea, .contact-me button {
