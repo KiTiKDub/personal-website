@@ -81,7 +81,8 @@
                       </div>
 
                       <!-- <a href="Downloads/Deep Space.zip" download> 
-                        <button class="download-button" type="button">Download DEEP SPACE (FREE)</button> -->
+                        <button class="download-button" type="button">Download DEEP SPACE (FREE)</button> 
+                      -->
                       
                     <script src="https://www.paypal.com/sdk/js?client-id=AZDY3C01ot6gcTHqWpp6hcM2ewT9d5oi3GYvePIMPZNhOL56lhKZCkr9WoiaWWFTisHMBR7bg-bgRtp2&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
                     <script>
@@ -110,9 +111,7 @@
                               // Show a success message within this page, e.g.
                               const element = document.getElementById('paypal-button-container');
                               element.innerHTML = '';
-                              element.innerHTML = '<h3>Thank you for your payment!</h3>';
-                  
-                              actions.redirect('../Secondary Pages/deepSpaceDownload.html');
+                              element.innerHTML = '<<h3>Thank you for your payment! Download <a href="../Seconday Pages/deepSpaceDownload.html"> here </a> </h3>>' ;
                               
                             });
                           },

@@ -77,6 +77,9 @@
                           <div id="paypal-button-container"></div>
                         </div>
                       </div>
+                      
+                    
+
                     <script src="https://www.paypal.com/sdk/js?client-id=AZDY3C01ot6gcTHqWpp6hcM2ewT9d5oi3GYvePIMPZNhOL56lhKZCkr9WoiaWWFTisHMBR7bg-bgRtp2&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
                     <script>
                       function initPayPalButton() {
@@ -104,9 +107,7 @@
                               // Show a success message within this page, e.g.
                               const element = document.getElementById('paypal-button-container');
                               element.innerHTML = '';
-                              element.innerHTML = '<h3>Thank you for your payment!</h3>';
-                  
-                              actions.redirect('../Secondary Pages/fallout download.html');
+                              element.innerHTML = '<h3>Thank you for your payment! Download <a href="../Seconday Pages/fallout download.html"> here</h3>';
                               
                             });
                           },
