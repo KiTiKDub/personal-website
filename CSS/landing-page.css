@@ -103,6 +103,7 @@ p {
     align-items: center;
     justify-content: center;
     transition: width .75s;
+    
 }
 
 .audius-logo:hover,
@@ -114,9 +115,12 @@ p {
     }
 
 .video-side {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+}
+
+.video {
+    display: grid;
+    justify-self: center;
 }
 
 .center-body {
@@ -137,6 +141,11 @@ p {
 }
 
 .fallout-vid {
+    
+    /* justify-self: center; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    justify-self: center;
     width: 75%;
 }
 

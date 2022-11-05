@@ -13,8 +13,11 @@
 
         <link rel="stylesheet" href="../CSS/landing-page.css">
         <link rel="stylesheet" href="../CSS/general.css">
+        <link rel="stylesheet" href="../CSS/waveformDesign.css">
 
-        <!-- Meta Pixel Code -->
+        <script src="https://unpkg.com/wavesurfer.js"></script>
+
+      <!-- Meta Pixel Code -->
         <script>
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -24,11 +27,11 @@
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '448855447359830');
+          fbq('init', '1298766164222787');
           fbq('track', 'PageView');
           </script>
           <noscript><img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=448855447359830&ev=PageView&noscript=1"
+          src="https://www.facebook.com/tr?id=1298766164222787&ev=PageView&noscript=1"
           /></noscript>
       <!-- End Meta Pixel Code -->
 
@@ -62,7 +65,6 @@
                 <div class="bottom-grid">
                     <div class="music-header">
                         Fallout Sample Pack
-                        <hr>
                     </div>
                     <div>
                     </div>
@@ -75,21 +77,109 @@
             <div class="left-side-main"></div>
             <div class="center-body">
                 <div class="video-side">
+                  <div class="video">
                     <video class="fallout-vid" src="../Videos/Breakdown Cuts 1.mp4" controls muted autoplay loop></video>
+                  </div>
+
+                  <!--Do a sepearte .js file-->
+                  <div class="waveform-grid">
+                    <div class="waveform" id="waveform">
+                                
+                      <script>
+                        var playBtn = document.getElementById("playBtn");
+
+                        var wavesurfer = WaveSurfer.create({
+                        container: '#waveform',
+                        waveColor: 'white',
+                        progressColor: 'red',
+                        barHeight: '.5',
+                        hideScrollbar: 'true',
+                        cursorWidth: '0'
+                        
+                        });
+                        wavesurfer.load('../Audio/Distant Bass 1.wav');
+
+                        playBtn.onclick = function() {
+                          wavesurfer.playPause();
+                        }
+                      </script>
+                      <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn">   Distant Bass 1.wav
+                    </div>
+
+                    <div class="waveform" id="waveform1">
+                                              
+                      <script>
+                        var playBtn = document.getElementById("playBtn");
+                        
+                        var wavesurfer = WaveSurfer.create({
+                        container: '#waveform1',
+                        waveColor: 'white',
+                        progressColor: 'red',
+                        barHeight: '.5',
+                        hideScrollbar: 'true',
+                        cursorWidth: '0'
+                        
+                        });
+                        wavesurfer.load('../Audio/Gun Bass 1.wav');
+                      </script>
+                      <img class="play-button" src="../Pictures/play-fill.svg">   Gun Bass 1.wav
+                    </div>
+
+                    <div class="waveform" id="waveform2">
+                                              
+                      <script>
+                        var playBtn = document.getElementById("playBtn");
+
+                        var wavesurfer = WaveSurfer.create({
+                        container: '#waveform2',
+                        waveColor: 'white',
+                        progressColor: 'red',
+                        barHeight: '.5',
+                        hideScrollbar: 'true',
+                        cursorWidth: '0'
+                        
+                        });
+                        wavesurfer.load('../Audio/Water Bass.wav');
+                      </script>
+                      <img class="play-button" src="../Pictures/play-fill.svg">    Water Bass.wav
+                    </div>
+
+                    <div class="waveform" id="waveform3">
+                                              
+                      <script>
+                        var playBtn = document.getElementById("playBtn");
+
+                        var wavesurfer = WaveSurfer.create({
+                        container: '#waveform3',
+                        waveColor: 'white',
+                        progressColor: 'red',
+                        barHeight: '.5',
+                        hideScrollbar: 'true',
+                        cursorWidth: '0'
+                        
+                        });
+                        wavesurfer.load('../Audio/Wook 3.wav');
+                      </script>
+                      <img class="play-button" src="../Pictures/play-fill.svg">     Wook 3.wav
+                    </div>
+
+                  </div>
                 </div>
                 <div class="information-side">
                     Create your own banger with samples from my released track 'Fallout'! <br> <br>
                     Use bass samples, drum samples, risers, and all sorts of various sounds to create your own unique track <br> <br>
                     Also included, a few Serum Presets, to really take your production to the next level <br> <br>
         
-                    <b><u>In this pack you will get:</u></b> <br>
+                    <b><u>In this pack you will get: </u></b> <br>
                     <ul>
                         <li>15 Bass One Shots</li>
                         <li>3 Atmospheric Samples</li>
                         <li>2 Drum Loops</li>
                         <li>6 One Shots</li>
                         <li>3 Serum Presets</li>
-                    </ul> <hr> <br>
+                    </ul> <hr>  <br>
+                    
+                    
                     <div id="smart-button-container">
                         <div style="text-align: center;">
                           <div id="paypal-button-container"></div>
@@ -137,6 +227,7 @@
                       }
                       initPayPalButton();
                     </script>
+                    
                 </div>
             </div>
             <div class="right-side-main"></div>
