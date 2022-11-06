@@ -15,6 +15,9 @@
 
         <link rel="stylesheet" href="../CSS/landing-page.css">
         <link rel="stylesheet" href="../CSS/general.css">
+        <link rel="stylesheet" href="../CSS/waveformDesign.css">
+
+        <script src="https://unpkg.com/wavesurfer.js"></script>
 
         <!-- Meta Pixel Code -->
         <script>
@@ -77,7 +80,32 @@
             <div class="left-side-main"></div>
             <div class="center-body">
                 <div class="video-side">
+                  <div class="video">
                     <img class="fallout-vid" src="../Pictures/Deep Space Cover.jpg"></img>
+                  </div>
+                  <div class="waveform-grid">
+                    <div class="waveform">
+                      <div id="waveform"></div>
+                      <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn">   All around.wav
+                    </div>
+
+                    <div class="waveform">
+                      <div id="waveform2"></div>
+                      <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn2">   Careful.wav
+                    </div>
+
+                    <div class="waveform">
+                      <div id="waveform3"></div>
+                      <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn3">    Distance.wav
+                    </div>
+
+                    <div class="waveform">
+                      <div id="waveform4"></div>
+                      <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn4">     Landing.wav
+                    </div>
+
+                  </div>
+                    
                 </div>
                 <div class="information-side">
                     <b><u>DEEP SPACE</u></b> <br> <br>
@@ -145,6 +173,126 @@
                 </div>
             </div>
             <div class="right-side-main"></div>
-        </div>    
+        </div>
+        <script>
+          var playBtn = document.getElementById("playBtn")
+
+          var wavesurfer = WaveSurfer.create({
+          container: '#waveform',
+          waveColor: 'white',
+          progressColor: 'red',
+          barHeight: '.5',
+          hideScrollbar: 'true',
+          cursorWidth: '0'
+
+          });
+         
+          wavesurfer.load('../Audio/KiTiK - DeepSpace - All around.wav');
+          
+
+          playBtn.onclick = function () {
+            wavesurfer.playPause()
+            wavesurfer.setPlayEnd('2')
+            if(playBtn.src.includes("play-fill.svg")) {
+              playBtn.src = "../Pictures/pause-fill.svg"
+            }else{
+              playBtn.src = "../Pictures/play-fill.svg"
+            }
+            
+          }
+          wavesurfer.on('pause', function() {
+            if(wavesurfer.getCurrentTime() > 2) {
+              playBtn.src = "../Pictures/play-fill.svg"
+              wavesurfer.stop()
+            }
+          })
+
+          
+        </script>
+
+        <script>
+          var playBtn2 = document.getElementById("playBtn2")
+
+          var wavesurfer2 = WaveSurfer.create({
+          container: '#waveform2',
+          waveColor: 'white',
+          progressColor: 'red',
+          barHeight: '.5',
+          hideScrollbar: 'true',
+          cursorWidth: '0'
+
+          });
+          wavesurfer2.load('../Audio/KiTiK - DeepSpace - Careful.wav');
+
+          playBtn2.onclick = function() {
+            wavesurfer2.playPause();
+            if(playBtn2.src.includes("play-fill.svg")) {
+              playBtn2.src = "../Pictures/pause-fill.svg"
+            }else{
+              playBtn2.src = "../Pictures/play-fill.svg"
+            }
+          }
+          wavesurfer2.on('finish', function() {
+            playBtn2.src = "../Pictures/play-fill.svg"
+            wavesurfer2.stop();
+          })
+        </script>
+
+        <script>
+          var playBtn3 = document.getElementById("playBtn3")
+
+          var wavesurfer3 = WaveSurfer.create({
+          container: '#waveform3',
+          waveColor: 'white',
+          progressColor: 'red',
+          barHeight: '.5',
+          hideScrollbar: 'true',
+          cursorWidth: '0'
+
+          });
+          wavesurfer3.load('../Audio/KiTiK - DeepSpace - Distance.wav');
+
+          playBtn3.onclick = function() {
+            wavesurfer3.playPause();
+            if(playBtn3.src.includes("play-fill.svg")) {
+              playBtn.src = "../Pictures/pause-fill.svg"
+            }else{
+              playBtn3.src = "../Pictures/play-fill.svg"
+            }
+          }
+          wavesurfer3.on('finish', function() {
+            playBtn3.src = "../Pictures/play-fill.svg"
+            wavesurfer3.stop();
+          })
+        </script>
+
+        <script>
+          var playBtn4 = document.getElementById("playBtn4")
+
+          var wavesurfer4 = WaveSurfer.create({
+          container: '#waveform4',
+          waveColor: 'white',
+          progressColor: 'red',
+          barHeight: '.5',
+          hideScrollbar: 'true',
+          cursorWidth: '0'
+
+          });
+          wavesurfer4.load('../Audio/KiTiK - DeepSpace - Landing.wav');
+
+          playBtn4.onclick = function() {
+            wavesurfer4.playPause();
+            if(playBtn4.src.includes("play-fill.svg")) {
+              playBtn4.src = "../Pictures/pause-fill.svg"
+            }else{
+              playBtn4.src = "../Pictures/play-fill.svg"
+            }
+          }
+          wavesurfer4.on('finish', function() {
+            playBtn4.src = "../Pictures/play-fill.svg"
+            wavesurfer4.stop();
+          })
+        
+        </script>    
     </body>
 </html>

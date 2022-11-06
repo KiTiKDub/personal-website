@@ -81,86 +81,25 @@
                     <video class="fallout-vid" src="../Videos/Breakdown Cuts 1.mp4" controls muted autoplay loop></video>
                   </div>
 
-                  <!--Do a sepearte .js file-->
                   <div class="waveform-grid">
-                    <div class="waveform" id="waveform">
-                                
-                      <script>
-                        var playBtn = document.getElementById("playBtn");
-
-                        var wavesurfer = WaveSurfer.create({
-                        container: '#waveform',
-                        waveColor: 'white',
-                        progressColor: 'red',
-                        barHeight: '.5',
-                        hideScrollbar: 'true',
-                        cursorWidth: '0'
-                        
-                        });
-                        wavesurfer.load('../Audio/Distant Bass 1.wav');
-
-                        playBtn.onclick = function() {
-                          wavesurfer.playPause();
-                        }
-                      </script>
+                    <div class="waveform">
+                      <div id="waveform"></div>
                       <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn">   Distant Bass 1.wav
                     </div>
 
-                    <div class="waveform" id="waveform1">
-                                              
-                      <script>
-                        var playBtn = document.getElementById("playBtn");
-                        
-                        var wavesurfer = WaveSurfer.create({
-                        container: '#waveform1',
-                        waveColor: 'white',
-                        progressColor: 'red',
-                        barHeight: '.5',
-                        hideScrollbar: 'true',
-                        cursorWidth: '0'
-                        
-                        });
-                        wavesurfer.load('../Audio/Gun Bass 1.wav');
-                      </script>
-                      <img class="play-button" src="../Pictures/play-fill.svg">   Gun Bass 1.wav
+                    <div class="waveform">
+                      <div id="waveform2"></div>
+                      <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn2">   Gun Bass 1.wav
                     </div>
 
-                    <div class="waveform" id="waveform2">
-                                              
-                      <script>
-                        var playBtn = document.getElementById("playBtn");
-
-                        var wavesurfer = WaveSurfer.create({
-                        container: '#waveform2',
-                        waveColor: 'white',
-                        progressColor: 'red',
-                        barHeight: '.5',
-                        hideScrollbar: 'true',
-                        cursorWidth: '0'
-                        
-                        });
-                        wavesurfer.load('../Audio/Water Bass.wav');
-                      </script>
-                      <img class="play-button" src="../Pictures/play-fill.svg">    Water Bass.wav
+                    <div class="waveform">
+                      <div id="waveform3"></div>
+                      <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn3">    Water Bass.wav
                     </div>
 
-                    <div class="waveform" id="waveform3">
-                                              
-                      <script>
-                        var playBtn = document.getElementById("playBtn");
-
-                        var wavesurfer = WaveSurfer.create({
-                        container: '#waveform3',
-                        waveColor: 'white',
-                        progressColor: 'red',
-                        barHeight: '.5',
-                        hideScrollbar: 'true',
-                        cursorWidth: '0'
-                        
-                        });
-                        wavesurfer.load('../Audio/Wook 3.wav');
-                      </script>
-                      <img class="play-button" src="../Pictures/play-fill.svg">     Wook 3.wav
+                    <div class="waveform">
+                      <div id="waveform4"></div>
+                      <img class="play-button" src="../Pictures/play-fill.svg" id="playBtn4">     Wook 3.wav
                     </div>
 
                   </div>
@@ -233,34 +172,115 @@
             <div class="right-side-main"></div>
         </div>
 
-        <!--
-            <span style="width: 50%; float: left">
-            <video width="700" src="Crazy Waveform.mp4" controls muted autoplay loop></video>
-        </span>
-        <span style="width: 50%; float: right">
-            Create your own banger with samples from my released track 'Fallout'! <br>
-            Use bass samples, drum samples, risers, and all sorts of various sounds to create your own unique track <br>
-            Also included, a few Serum Presets, to really take your production to the next level <br> <br>
+       
+        <script>
+          var playBtn = document.getElementById("playBtn")
 
-            In this pack you will get <br>
-            <ul>
-                <li>15 Bass One Shots</li>
-                <li>3 Atmospheric Samples</li>
-                <li>2 Drum Loops</li>
-                <li>6 One Shoots</li>
-                <li>3 Serum Presets</li>
-            </ul> <br>
+          var wavesurfer = WaveSurfer.create({
+          container: '#waveform',
+          waveColor: 'white',
+          progressColor: 'red',
+          barHeight: '.5',
+          hideScrollbar: 'true',
+          cursorWidth: '0'
 
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="86CJTJXUQLATL">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        </span>
-        -->
+          });
+          wavesurfer.load('../Audio/Distant Bass 1.wav');
+
+          playBtn.onclick = function () {
+            wavesurfer.playPause()
+            if(playBtn.src.includes("play-fill.svg")) {
+              playBtn.src = "../Pictures/pause-fill.svg"
+            }else{
+              playBtn.src = "../Pictures/play-fill.svg"
+            }
+          }
+          wavesurfer.on('finish', function() {
+            playBtn.src = "../Pictures/play-fill.svg"
+          })
+        </script>
+
+        <script>
+          var playBtn2 = document.getElementById("playBtn2")
+
+          var wavesurfer2 = WaveSurfer.create({
+          container: '#waveform2',
+          waveColor: 'white',
+          progressColor: 'red',
+          barHeight: '.5',
+          hideScrollbar: 'true',
+          cursorWidth: '0'
+
+          });
+          wavesurfer2.load('../Audio/Gun Bass 1.wav');
+
+          playBtn2.onclick = function() {
+            wavesurfer2.playPause();
+            if(playBtn2.src.includes("play-fill.svg")) {
+              playBtn2.src = "../Pictures/pause-fill.svg"
+            }else{
+              playBtn2.src = "../Pictures/play-fill.svg"
+            }
+          }
+          wavesurfer2.on('finish', function() {
+            playBtn2.src = "../Pictures/play-fill.svg"
+          })
+        </script>
+
+        <script>
+          var playBtn3 = document.getElementById("playBtn3")
+
+          var wavesurfer3 = WaveSurfer.create({
+          container: '#waveform3',
+          waveColor: 'white',
+          progressColor: 'red',
+          barHeight: '.5',
+          hideScrollbar: 'true',
+          cursorWidth: '0'
+
+          });
+          wavesurfer3.load('../Audio/Water Bass.wav');
+
+          playBtn3.onclick = function() {
+            wavesurfer3.playPause();
+            if(playBtn3.src.includes("play-fill.svg")) {
+              playBtn.src = "../Pictures/pause-fill.svg"
+            }else{
+              playBtn3.src = "../Pictures/play-fill.svg"
+            }
+          }
+          wavesurfer3.on('finish', function() {
+            playBtn3.src = "../Pictures/play-fill.svg"
+          })
+        </script>
+
+        <script>
+          var playBtn4 = document.getElementById("playBtn4")
+
+          var wavesurfer4 = WaveSurfer.create({
+          container: '#waveform4',
+          waveColor: 'white',
+          progressColor: 'red',
+          barHeight: '.5',
+          hideScrollbar: 'true',
+          cursorWidth: '0'
+
+          });
+          wavesurfer4.load('../Audio/Wook 3.wav');
+
+          playBtn4.onclick = function() {
+            wavesurfer4.playPause();
+            if(playBtn4.src.includes("play-fill.svg")) {
+              playBtn4.src = "../Pictures/pause-fill.svg"
+            }else{
+              playBtn4.src = "../Pictures/play-fill.svg"
+            }
+          }
+          wavesurfer4.on('finish', function() {
+            playBtn4.src = "../Pictures/play-fill.svg"
+          })
         
-
+        </script>
 
         
     </body>
