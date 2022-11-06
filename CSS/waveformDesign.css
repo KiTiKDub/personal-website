@@ -1,0 +1,16 @@
+.waveform-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    column-gap: 50px;
+    
+}
+
+.waveform {
+    margin: 0;
+}
+
+.play-button {
+    width: 25px;
+    filter: invert(1)
+}
