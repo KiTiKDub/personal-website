@@ -11,26 +11,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=My+Soul&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="CSS/store.css">
+        <link rel="stylesheet" href="CSS/animated-layout.css">
         <link rel="stylesheet" href="CSS/general.css">
+        <link rel="stylesheet" href="CSS/store.css">
+        <link rel="stylesheet" href="CSS/waveformDesign.css">
 
-        <!-- Meta Pixel Code -->
-            <script>
-                !function(f,b,e,v,n,t,s)
-                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', '448855447359830');
-                fbq('track', 'PageView');
-                </script>
-                <noscript><img height="1" width="1" style="display:none"
-                src="https://www.facebook.com/tr?id=448855447359830&ev=PageView&noscript=1"
-                /></noscript>
-        <!-- End Meta Pixel Code -->
+        <script src="https://unpkg.com/wavesurfer.js"></script>
 
     </head>
     <body>
@@ -56,103 +42,442 @@
             </div>
         </header>
 
-        <div class="main-page-container">
-            <div class="left-side-main"></div>
-            <div class="row-grid">
-                <div class="above-grid">Sample Packs <hr></div>
-                <div class="middle-main">
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/Kalimba Free.html"> <img width="300" src="Pictures/Sample pack cover.png" alt="Kalimba Vacation [FREE DOWNLOAD]"></a> </div>
-                        <div>Kalimba Vacation Lite <b style="color: rgb(195, 26, 26)">(FREE)</b></div>
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/Full Kalimba Pack.html"><img width="300" src="Pictures/Sample pack cover.png" alt="Kalimba Vacation [FULL]"></a></div>
-                        <div>Kalimba Vacation Sample Pack <s>($19.99)</s> <b style="color:rgb(195, 26, 26)">($9.99)</b></div>
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/FalloutBuy.html"> <img width="300" src="Pictures/Fallout Cover Art.png" alt="Fallout Sample Pack"></a> </div>
-                        <div>Samples from 'Fallout' <s>($9.99)</s> <b style="color:rgb(195, 26, 26)">($4.99)</b></div> 
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/DeepSpaceBuy.html"><img width="300" src="Pictures/Deep Space Cover.jpg" alt="Deep Space Sample Pack"> </a></div>
-                        <div>Deep Space Sample Pack <s>($19.99)</s> <b style="color:rgb(195, 26, 26)">($9.99)</b></div>
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/LandscapesBuy.html"><img width="300" src="Pictures/Landscape.png" alt="Landscape Sample Pack"> </a></div>
-                        <div>Landscapes Sample Pack <s>($25.99)</s> <b style="color:rgb(195, 26, 26)">($14.99)</b></div>
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/PendulumBuy.html"><img width="300" src="Pictures/pendulum Cover.png" alt="Pendulum Sample Pack"> </a></div>
-                        <div>Pendulum Preset Pack <s>($19.99)</s> <b style="color:rgb(195, 26, 26)">($9.99)</b></div>
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/PotionsBuy.html"><img width="300" height="300" src="Pictures/Potion SP.jpg" alt="Potions Sample Pack"> </a></div>
-                        <div>Potions Preset Pack <s>($19.99)</s> <b style="color:rgb(195, 26, 26)">($9.99)</b></div>
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/VitalsBuy.html"><img width="300" src="Pictures/Vitals.png" alt="Vitals Sample Pack"> </a></div>
-                        <div>Vitals Preset Pack <s>($19.99)</s> <b style="color:rgb(195, 26, 26)">FREE</b></div>
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/EverythingBuy.html"><img width="300" src="Pictures/KITIK_LOGO_preview.png" alt="KiTiK Complete Collection"> </a></div>
-                        <div>KiTiK Complete Collection <s>($124.99)</s> <b style="color:rgb(195, 26, 26)">($34.99)</b></div>
-                    </div>                   
+    <section class="animated-grid">
+        <div class="card">
+            <a href="Buy Pages/DeepSpaceBuy.html">
+                <div class="image-overlay">
+                    <div>Deep Space</div>
+                    <div class="sub-text">Sample Pack</div>
                 </div>
-                <div class="above-grid">Plug-ins <hr></div>
-                <div class="middle-main">
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/BuyEQ.html"><img width="300" height="300" src="Pictures/SimpleEQ.PNG" alt="Simple EQ Download"></a> </div>
-                        <div>Three-Band EQ <b style="color: rgb(195, 26, 26)"> (FREE) </b></div>
-                    </div>
-                    <div style="font-family: 'Oswald', sans-serif">
-                        <div><a href="Buy Pages/BuyMB.html"><img width="300" height="300" src="Pictures/MBcomp.PNG" alt="Multiband Compressor Download"></a></div>
-                        <div>Multiband Compressor <b style="color:rgb(195, 26, 26)">(FREE)</b></div>
-                    </div>          
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/FalloutBuy.html">
+                <div class="image-overlay">
+                    <div>Fallout</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/LandscapesBuy.html">
+                <div class="image-overlay">
+                    <div>Landscapes</div>
+                    <div class="sub-text">Wavetable Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/PendulumBuy.html">
+                <div class="image-overlay">
+                    <div>Pendulum</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/PotionsBuy.html">
+                <div class="image-overlay">
+                    <div>Potions</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/VitalsBuy.html">
+                <div class="image-overlay">
+                    <div>Vitals</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/Kalimba Free.html">
+                <div class="image-overlay">
+                    <div>Kalimba Vacation</div>
+                    <div class="sub-text">Sample Pack (Lite)</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/Full Kalimba Pack.html">
+                <div class="image-overlay">
+                    <div>Kalimba Vacation</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/BuyMB.html">
+                <div class="image-overlay">
+                    <div>MultiBand</div>
+                    <div class="sub-text">Compressor</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Buy Pages/BuyEQ.html">
+                <div class="image-overlay">
+                    <div>3-Band</div>
+                    <div class="sub-text">Equalizer</div>
+                </div>
+            </a>
+        </div>
+        <!-- <div class="card"><img src="Pictures/icons8-instagram.svg"> </div>
+        <div class="card">12</div>
+        <div class="card">13</div>
+        <div class="card">14</div>
+        <div class="card">15</div>
+        <div class="card">16</div>-->
+        <div class="card">
+            <div class ="waveform-grid">
+                <div class="waveform">
+                    <div id="waveform"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn">   DeepSpace - Careful</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform2"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn2">   Fallout - Water Bass</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform3"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn3">   Pendulum - Lost at Sea Preset</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform4"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn4">   Potions - Demon Grunt Preset</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform5"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn5">   Vitals - Gunshot Warning Preset</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform6"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn6">   Kalimba Vacation - Melody 3</center></div>
                 </div>
             </div>
-            
-            <div class="right-side-main"></div>
+            <div><img class="background-logo" src="Pictures/KITIK_LOGO_NO_BKGD.png"></div> 
+            <div class="waveform-grid">
+                <div class="waveform">
+                    <div id="waveform7"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn7">   Deep Space - Landing</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform8"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn8">   Fallout - Distant Bass 1</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform9"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn9">   Pendulum - Talking Bass Preset</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform10"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn10">   Potions - PEW Preset</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform11"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn11">   Vitals - Alien Processing Preset</center></div>
+                </div>
+                <div class="waveform">
+                    <div id="waveform12"></div>
+                    <div><center><img class="play-button" src="Pictures/play-fill.svg" id="playBtn12">   Kalimba Vacation - Melody 4</center></div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!--
-             <hr>
-        This is where the Store will be! currently underconstruction, please gib money. <br>
-        <table>
-            <tr>
-                <th><a href="Kalimba Free.html">
-                    <img width="200" src="Sample pack cover.png" alt="Kalimba Vacation [FREE DOWNLOAD]">
-                </a></th>
+    <script>
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
 
-                <th><a href="Full Kalimba Pack.html" download>
-                    <img width="200" src="Sample pack cover.png" alt="Kalimba Vacation [FULL]">
-                </a></th>
+    });
+    wavesurfer.load('Audio/KiTiK - DeepSpace - Careful.wav');
 
-                <th><a href="FalloutBuy.html"> 
-                    <img width="200" src="Fallout Cover Art.jpg" alt="Fallout Sample Pack">
-                </a></th>
+    playBtn.onclick = function() {
+      wavesurfer.playPause();
+      if(playBtn.src.includes("play-fill.svg")) {
+        playBtn.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer.on('finish', function() {
+      playBtn.src = "Pictures/play-fill.svg"
+      wavesurfer.stop();
+    })
 
-                <th><a href="BuyEQ.html">
-                    <img width="200" height="200" src="SimpleEQ.PNG" alt="Simple EQ Download">
-                </a></th>
-            </tr>
-            <tr>
-                <td><b>FREE</b> Kalimba Sample pack</td>
-                <td>Full Kalimba Sample Pack <br> ($9.99)</td>
-                <td>Fallout Sample Pack <br> ($4.99)</td>
-                <td><b>FREE</b> 3 Band EQ</td>
-            </tr>
-        </table>
-        -->
-       
+    var wavesurfer2 = WaveSurfer.create({
+    container: '#waveform2',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer2.load('Audio/Water Bass.wav');
+
+    playBtn2.onclick = function() {
+      wavesurfer2.playPause();
+      if(playBtn2.src.includes("play-fill.svg")) {
+        playBtn2.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn2.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer2.on('finish', function() {
+      playBtn2.src = "Pictures/play-fill.svg"
+      wavesurfer2.stop();
+    })
+
+    var wavesurfer3 = WaveSurfer.create({
+    container: '#waveform3',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer3.load('Audio/Lost at Sea.wav');
+
+    playBtn3.onclick = function() {
+      wavesurfer3.playPause();
+      if(playBtn3.src.includes("play-fill.svg")) {
+        playBtn3.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn3.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer3.on('finish', function() {
+      playBtn3.src = "Pictures/play-fill.svg"
+      wavesurfer3.stop();
+    })
+
+    var wavesurfer4 = WaveSurfer.create({
+    container: '#waveform4',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer4.load('Audio/Demon Grunt.wav');
+
+    playBtn4.onclick = function() {
+      wavesurfer4.playPause();
+      if(playBtn4.src.includes("play-fill.svg")) {
+        playBtn4.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn4.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer4.on('finish', function() {
+      playBtn4.src = "Pictures/play-fill.svg"
+      wavesurfer4.stop();
+    })
+
+    var wavesurfer5 = WaveSurfer.create({
+    container: '#waveform5',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer5.load('Audio/Gunshot Warning Bounce.wav');
+
+    playBtn5.onclick = function() {
+      wavesurfer5.playPause();
+      if(playBtn5.src.includes("play-fill.svg")) {
+        playBtn5.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn5.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer5.on('finish', function() {
+      playBtn5.src = "Pictures/play-fill.svg"
+      wavesurfer5.stop();
+    })
+
+    var wavesurfer6 = WaveSurfer.create({
+    container: '#waveform6',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer6.load('Audio/Kitik_Kalimba_Melody_3_Wet (120 BPM).wav');
+
+    playBtn6.onclick = function() {
+      wavesurfer6.playPause();
+      if(playBtn6.src.includes("play-fill.svg")) {
+        playBtn6.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn6.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer6.on('finish', function() {
+      playBtn6.src = "Pictures/play-fill.svg"
+      wavesurfer6.stop();
+    })
+
+    var wavesurfer7 = WaveSurfer.create({
+    container: '#waveform7',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer7.load('Audio/KiTiK - DeepSpace - Landing.wav');
+
+    playBtn7.onclick = function() {
+      wavesurfer7.playPause();
+      if(playBtn7.src.includes("play-fill.svg")) {
+        playBtn7.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn7.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer7.on('finish', function() {
+      playBtn7.src = "Pictures/play-fill.svg"
+      wavesurfer7.stop();
+    })
+
+    var wavesurfer8 = WaveSurfer.create({
+    container: '#waveform8',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer8.load('Audio/Distant Bass 1.wav');
+
+    playBtn8.onclick = function() {
+      wavesurfer8.playPause();
+      if(playBtn8.src.includes("play-fill.svg")) {
+        playBtn8.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn8.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer8.on('finish', function() {
+      playBtn8.src = "Pictures/play-fill.svg"
+      wavesurfer8.stop();
+    })
+
+    var wavesurfer9 = WaveSurfer.create({
+    container: '#waveform9',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer9.load('Audio/Talking Bass.wav');
+
+    playBtn9.onclick = function() {
+      wavesurfer9.playPause();
+      if(playBtn9.src.includes("play-fill.svg")) {
+        playBtn9.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn9.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer9.on('finish', function() {
+      playBtn9.src = "Pictures/play-fill.svg"
+      wavesurfer9.stop();
+    })
+
+    var wavesurfer10 = WaveSurfer.create({
+    container: '#waveform10',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer10.load('Audio/PEW.wav');
+
+    playBtn10.onclick = function() {
+      wavesurfer10.playPause();
+      if(playBtn10.src.includes("play-fill.svg")) {
+        playBtn10.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn10.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer10.on('finish', function() {
+      playBtn10.src = "Pictures/play-fill.svg"
+      wavesurfer10.stop();
+    })
+
+    var wavesurfer11 = WaveSurfer.create({
+    container: '#waveform11',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer11.load('Audio/Alien Processing Bounce.wav');
+
+    playBtn11.onclick = function() {
+      wavesurfer11.playPause();
+      if(playBtn11.src.includes("play-fill.svg")) {
+        playBtn11.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn11.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer11.on('finish', function() {
+      playBtn11.src = "Pictures/play-fill.svg"
+      wavesurfer11.stop();
+    })
+
+    var wavesurfer12 = WaveSurfer.create({
+    container: '#waveform12',
+    waveColor: 'white',
+    progressColor: 'red',
+    hideScrollbar: 'true',
+    cursorWidth: '0',
+    height: '30'
+
+    });
+    wavesurfer12.load('Audio/Kitik_Kalimba_Melody_4_Wet (120 BPM).wav');
+
+    playBtn12.onclick = function() {
+      wavesurfer12.playPause();
+      if(playBtn12.src.includes("play-fill.svg")) {
+        playBtn12.src = "Pictures/pause-fill.svg"
+      }else{
+        playBtn12.src = "Pictures/play-fill.svg"
+      }
+    }
+    wavesurfer12.on('finish', function() {
+      playBtn12.src = "Pictures/play-fill.svg"
+      wavesurfer12.stop();
+    })
+
+   
+    </script>
 
 
-        
     </body>
 </html>
-
-<!-- Buttons we can have: 
-    1. Store drop down
-    2. Soundcloud (done)
-    3. Spotify 
-    4. Project for plugins? (Probably not)
-    5. -->

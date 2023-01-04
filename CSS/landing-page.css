@@ -1,3 +1,14 @@
+@keyframes waveBlur {
+    from{
+        opacity: 0;
+        filter: blur(5px);
+    }
+    to{
+        opacity: 1;
+        filter:blur(0px);
+    }   
+}
+
 p {
     font-family: 'Oswald', sans-serif;
 }
@@ -12,6 +23,7 @@ p {
     left: 0;
     right: 0;
     background-color: rgb(195, 26, 26);
+    z-index: 100;
 }
 
 .left-side {
@@ -57,7 +69,6 @@ p {
     border-right: none;
 }
 
-/* possibly change to grid to make text bold on hover */
 .nav-soundcloud:hover,
 .nav-store:hover,
 .nav-spotify:hover {
@@ -85,13 +96,6 @@ p {
 
 .music-home:hover {
     width: 100px;
-}
-
-/* Make background interesting*/
-.main-page-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    column-gap: 10px;
 }
 
 .audius-logo,
@@ -133,6 +137,7 @@ p {
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 15px;
+    animation: waveBlur 1000ms ease-out;
     
 }
 
@@ -141,10 +146,6 @@ p {
 }
 
 .fallout-vid {
-    
-    /* justify-self: center; */
-    /* justify-items: center; */
-    /* align-items: center; */
     justify-self: center;
     width: 75%;
 }
@@ -174,51 +175,8 @@ p {
     cursor: pointer;
     color: black;
     background-color: white;
-}
+}      
 
-.bottom-gird {
-    display:grid;
-    grid-template-rows: 75px 1fr;
-    row-gap: 20px;
-}
-
-.bottom-center {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    column-gap: 10px;
-    padding-top: 50px;
-}
-
-.top-center {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    column-gap: 10px;
-}
-
-.music-header {
-    font-family: 'Oswald', sans-serif;
-    font-size: 36px;
-}
-
-.music-embed {
-    font-size: 10px; 
-    color: #cccccc;
-    line-break: anywhere;
-    word-break: normal;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
-    font-weight: 100;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border-radius: 15px;
-    padding: 50px 0;
-}
-
-.landing-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 36px;
-}
+.card:nth-child(11) {
+    grid-template-columns: 100%;
+} 

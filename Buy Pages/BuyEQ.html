@@ -2,40 +2,29 @@
 <html>
     <head>
         <meta charset="UT-8">
-        <meta name="description" content="3-band EQ">
+        <meta name="description" content="KiTik Sample Pack and Plug-in store">
         <meta name="author" content="Kyle Whaley">
         <meta name="viewport" content="width=device-wdith, intial-scale=1.0">
-        <title> Simple EQ </title>
+        <title> Three Band EQ </title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=My+Soul&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="../CSS/landing-page.css">
+        <link rel="stylesheet" href="../CSS/animated-layout.css">
         <link rel="stylesheet" href="../CSS/general.css">
+        <link rel="stylesheet" href="../CSS/waveformDesign.css">
+        <link rel="stylesheet" href="../CSS/landing-page.css">
 
-        <!-- Meta Pixel Code -->
-        <script>
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '448855447359830');
-            fbq('track', 'PageView');
-            </script>
-            <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=448855447359830&ev=PageView&noscript=1"
-            /></noscript>
-        <!-- End Meta Pixel Code -->
+        <script src="https://unpkg.com/wavesurfer.js"></script>
+        <script src="https://www.paypal.com/sdk/js?client-id=AZDY3C01ot6gcTHqWpp6hcM2ewT9d5oi3GYvePIMPZNhOL56lhKZCkr9WoiaWWFTisHMBR7bg-bgRtp2&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+
     </head>
     <body>
+
         <header class="header"> 
             <div class="left-side">
-                <a href="index.html"><img class="music-home" src="../Pictures/KITIK_LOGO_NO_BKGD.png"></a>
+                <a href="../index.html"><img class="music-home" src="../Pictures/KITIK_LOGO_NO_BKGD.png"></a>
             </div>
             <nav class="center">
                 <!--<button class="nav-linkedin" onclick="window.open('https://www.linkedin.com/in/kyle-whaley5/')">Linkedin</button>-->
@@ -54,33 +43,105 @@
             </div>
         </header>
 
-        <div class="top-center">
-            <div></div>
-            <div>
-                <div class="bottom-grid">
-                    <div class="music-header">
-                        Three-band EQ (<b>FREE</b>)
-                        <hr>
-                    </div>
-                    <div>
-                    </div>
+    <section class="animated-grid">
+        <div class="card">
+            <a href="DeepSpaceBuy.html">
+                <div class="image-overlay">
+                    <div>Deep Space</div>
+                    <div class="sub-text">Sample Pack</div>
                 </div>
-            </div>
-            <div></div>
+            </a>
         </div>
-
-        <div class="main-page-container">
-            <div class="left-side-main"></div>
+        <div class="card">
+            <a href="FalloutBuy.html">
+                <div class="image-overlay">
+                    <div>Fallout</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="LandscapesBuy.html">
+                <div class="image-overlay">
+                    <div>Landscapes</div>
+                    <div class="sub-text">Wavetable Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="PendulumBuy.html">
+                <div class="image-overlay">
+                    <div>Pendulum</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="PotionsBuy.html">
+                <div class="image-overlay">
+                    <div>Potions</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="VitalsBuy.html">
+                <div class="image-overlay">
+                    <div>Vitals</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Kalimba Free.html">
+                <div class="image-overlay">
+                    <div>Kalimba Vacation</div>
+                    <div class="sub-text">Sample Pack (Lite)</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="Full Kalimba Pack.html">
+                <div class="image-overlay">
+                    <div>Kalimba Vacation</div>
+                    <div class="sub-text">Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="BuyMB.html">
+                <div class="image-overlay">
+                    <div>MultiBand</div>
+                    <div class="sub-text">Compressor</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="BuyEQ.html">
+                <div class="image-overlay">
+                    <div>3-Band</div>
+                    <div class="sub-text">Equalizer</div>
+                </div>
+            </a>
+        </div>
+        <!-- <div class="card"><img src="Pictures/icons8-instagram.svg"> </div>
+        <div class="card">12</div>
+        <div class="card">13</div>
+        <div class="card">14</div>
+        <div class="card">15</div>
+        <div class="card">16</div>-->
+        <div class="card">
             <div class="center-body">
                 <div class="video-side">
                     <video class="EQ-vid" src="../Videos/Simple EQ demo.mp4" controls muted autoplay loop></video>
                 </div>
                 <div class="information-side">
+                    <b><u>3 BAND EQ - FREE </u></b> <br> <br>
                 Need a simple EQ to spice up your production? Look no further! <br> <br>
-                Here is a simple EQ that get quick fixes on your sounds, or on your bus. <br>
+                Here is a simple EQ that gets quick fixes on your sounds, or on your bus. <br>
 
                 <ul>
-                    <li> You get everything you expect with your high pass and low pass filters, and mid band filter to boost or lower any frequenices you desire</li>
+                    <li> You get everything you expect with your high pass and low pass filters, and mid band filter to boost or lower any frequencies you desire</li>
                     <li> Adjust your slopes of the high & low pass filters, ranging from 6 db/oct to 24!</li>
                     <li> Control is in your hands. Toggle on off each band, and see where your cut offs are with ease with the EQ curve</li>
                 </ul>
@@ -90,33 +151,8 @@
                     <button class="download-button" type="button">Download EQ <b style="color:rgb(195, 26, 26)">FREE</b></button>
                 </div>
             </div>
-            <div class="right-side-main"></div>
         </div>
+    </section>
 
-        <!--
-              <span style="float: left; width: 50%;">
-            <video width="700" src="Simple EQ demo.mp4" controls muted autoplay loop></video>
-        </span>
-        <span style="float:right; width: 50%;">
-            Need a simple EQ to spice up your production? Look no further! <br>
-            Here is a simple EQ that get quick fixes on your sounds, or on your bus. <br>
-            <ul>
-                <li> You get everything you expect with your high pass and low pass filters, and mid band filter to boost or lower any frequenices you desire</li>
-                <li> Adjust your slopes of the high & low pass filters, ranging from 6 db/oct to 24!</li>
-                <li> Control is in your hands. Toggle on off each band, and see where your cut offs are with ease with the EQ curve</li>
-            </ul>
-            This EQ was created from a tutorial from programmingformusicans.com. Check out there website if you are interested in developing your own plugins! <br>
-            All code is open source and can be found in the github link found in the read me of this download. <br> <br>
-            
-            <a href="SimpleEQ.zip" download>
-                <button width="100%" type="button">Download 3 Band EQ</button>
-            </a>
-
-        </span>
-        
-        -->
-      
-
-        
     </body>
 </html>

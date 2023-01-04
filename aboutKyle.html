@@ -1,10 +1,3 @@
-<!--    To do:-->
-<!--Set up redirect on paypal-->
-<!--Fix download issues-->
-<!--Erase email to Kitik on side-->
-<!--Figure out how to add videos-->
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,10 +11,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=My+Soul&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="CSS/header.css">
         <link rel="stylesheet" href="CSS/general.css">
-    </head>
+        <link rel="stylesheet" href="CSS/personal-site.css">
 
+        <script src="JS/custom.js" defer></script>
+    </head>
+  
     <body>
 
         <header class="header"> 
@@ -29,10 +25,9 @@
                 <a href="aboutKyle.html" class="home-link">Kyle Whaley</a>
             </div>
             <nav class="center">
-                
                 <button class="nav-linkedin" onclick="window.open('https://www.linkedin.com/in/kyle-whaley5/')">Linkedin</button>
                 <!--<button class="nav-soundcloud" onclick="window.open('https://soundcloud.com/kitikdub')">Soundcloud</button>-->
-                <button class="nav-projects" onclick="window.location.href=('Projects.html')">Projects</button>
+                <a href="#home"><button class="nav-projects">Home</button></a>
                 <!--<button class="nav-store" onclick="window.location.href=('store.html')">Store</button>-->
                 <button class="nav-resume" onclick="window.open('Resume Sept 2022.pdf')">Resume</button>
             </nav>
@@ -41,101 +36,151 @@
             </div>
         </header>
 
-        <div class="main-page-container">
-            <div class="left-side-margin"></div>
-                <div class="pictures-info">
-                    <img class="profile-pic" src="Pictures/Wedding image.jpg">
-                    <div class="text-info">
-                        Kyle Whaley <br>
-                        Systems Test Engineer 1 <br> <br>
-                        Purdue University <br>
-                        Bachlors of Science in Mechanical Engineering <br>
-                        3.7/4.0 <br> <br>
+        <div class="background-picture" id="home">
+            <div class="animated-grid">
+                <div class="card"> 
+                    <div><img class="info" src="Pictures/email.svg" style="filter:invert(1)">
+                        <a href="#contact"><div class="overlay">Contact Me</div></a>
                     </div>
                 </div>
-
-                <div class="text-body">
-                    <p>
-                        <b>Hello! Welcome to my website!</b> </br> <br>
-                        I graduated in 2019 from Purdue University with Bachlors in Mechanical Engineering. I have three years of expierence working at Newport News shipbuilding where I have carried the title of Systems Test Engineer, Structrual Enginner, Software Test Engineer, and Mechanical Engineer </br>
-                        <ul>
-                            <li> I worked as Test Engineer for 1.5 years on Los Angeles class submarines, namely the USS Columbus, Helena & Boise. I assisted the crew in completeion and verification of restoriation of said submarines. I ensured that all piping and electrical components of various sytems could handle the stress and strain of all sea and combat situations. </li> <br>
-                            <li> I worked my last four jobs as apart of the rotational PEER Program at NNS. I held each position for 6 months. As a sctructual engineer, I worked upon the Navy's newest class of submarine, Columbia. My main project created a structually sound platform to ensure a 600 ton section of the submarine could be safetly stored and operated on for building. I also worked on various structures for various component transfers, such as loading of pumps and valves. </li> <br>
-                            <li> As a Software Test Engineer, I was responsible for testing of in house software that would control most valves, saftey systems, and electrical components on board the Ford Class Aircraft Carriers. My primary responsibilities included developing test procedures to ensure that changes made to code and systems were functioning properly within the team. Once testing began, we would test each others procedures, and provide any solutions for bugs that were found. </li> <br>
-                            <li> I then moved on to be a Mechanical Engineer for our model based manufacturing department. As a Mechanical Engineer, I was a checker for 3D drawings of piping and ventalition for the aircraft carrier Enterprise. I interfaced with developers of 3D drawings to verify that all dimensions, callouts, and all neccesary information for the trades to construct the aircraft carrier. </li> <br>
-                            <li> My current job as a Systems Engineer has me upkeeping and maintaining the system database for two different classes of submarines. My team is responsible for troubleshooting and solving any known issues within the database in how it recieves information. We will test any bugfixes, and move the program forward to allow for the value stream members to more easily and efficiently do there jobs.</li> <br>
-                        </ul>        
-                    </p>
-        
-                    <hr>
-        
-                    <p>
-                        One of my main hobbies outside of work is to learn how to be a developer. <br> <br>
-                        As you may be able to tell, this website was coded all from scratch and is hosted on my own domain. I love stretching my abilites to provide more value to all the people I work with. I also really enjoy developing because there are many logical aspects to it, but it still allows me to be creative with how I design my website or other programs. <br> <br>
-                        Beyond website development, my main language that I have learned is C/C++. My favoirte side projects to work on are audio plugins. Under the 'Projects' tab you can check out what I have been working on. <br> <br>
-                        One of my biggest dreams is to be able to have a job that allows me to use my techincal skills that I developed at Purdue, and be able to stretch myself with creative design and exploration through music and music application development. <br> <br>
-                    </p>
-        
-                    <hr>
-        
-                    <p>
-                        My other big hobby is creating music. <br> <br>
-                        My main way of creating is producing on Ableton Live, mainly focusing on electronic music, but that develops as I develop. If you click the mask in the top right corner, that will take you to my landing page with more info and my music ready to play! <br> <br>
-                        I really enjoy making music for the creative side of it. I have always learned to flex my analytical side, but I've neglected my creative side for most of my life. Music really stretches me in ways I could have never imagined. Not only do I think this is good for me as person, but I also believe it helps me be a better enginner and developer. <br> <br>
-                        I'm sure its most kids dreams to become a rockstar, but the more I work on my own creative endevors, I wonder if I would want that to be my livlihood. Regardless, I love exploring, and I just can't wait to see where life takes me. <br> <br>
-                    </p>
+                <div class="card"> 
+                    <div><img class="info" src="Pictures/mb-comp.gif">
+                        <a href="#projects"><div class="overlay">Projects</div></a> 
+                    </div> 
                 </div>
-            <div class="right-side-margin"></div>
-        </div>
-        
-        
-        <div class="three-below">
-            <div class="left-side-margin"></div>
-            <div>
-                <div class="combined-middle-header">Contact Me <br><hr> </div>
-                <div class="contact-me">
-                    <p>Have a question or would like to reach out to me? Email me <a href='mailto:kylewhaley5@gmail.com?Subject=Your Company Name Here&body=Information'>here!</a></p>
-                    
+                <div class="card"> <img class="profile-pic" src="Pictures/Wedding image.jpg"> </div>
+                <div class="card"> 
+                    <div><img class="info" src="Pictures/career.jpg">
+                        <a href="#carrer"><div class="overlay">Career</div></a>
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div><img class="info" src="Pictures/KITIK_LOGO_NO_BKGD.png">
+                        <a href="index.html"><div class="overlay">KW <br> Audio <br> Production</div> </a>
+                    </div>
                 </div>
             </div>
-            <div class="right-side-margin"> </div>
         </div>
-        
-        <!--
-            <input type="text" placeholder="Name" id="name">
-                    <input type="text" placeholder="Email" id="email">
-                    <textarea cols="5" rows="5" placeholder="Your Message..." id="your-message"></textarea>
-                    <button type="submit" onclick="storeInfo()">Send</button>
 
-                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <section class="white" id="carrer">
+            <div class="slider" data-slider>
+                <button class="prev" data-slider-button="previous">&#171;</button>
+                <button class="next" data-slider-button="nextone">&#187;</button>
+                <ul data-items>
+                    <li class="items" data-active>
+                        <div class="image-side"><img src="Pictures/grad pic.jpeg"> </div>
+                        <div class="info-side"> 
+                            <div class="info-header"><b>Hello! Welcome to my website!</b></div>
+                            <div class="info-body">I graduated in 2019 from Purdue University with Bachelors in Mechanical Engineering. I have three years of experience working at Newport News Shipbuilding (NNS) where I have carried the title of Systems Test Engineer, Structural Engineer, Software Test Engineer, Mechanical Engineer, and Model Based Engineer. I had the opportunity to participate in the PEER Program at NNS, which allowed me to transfer to up to four different departments in the span of two years. Each Position after Systems Test Engineer was held for 6 months, until I landed at my permanent role as a Model Based Engineer.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="info-side" left>
+                            <div class="info-header"><b>Newport News Shipbuilding: Test Engineer</b></div>
+                            <div class="info-body">I worked as Test Engineer for 1.5 years on Los Angeles class submarines, namely the USS Columbus, Helena & Boise. I assisted the crew in completion and verification of restoration of said submarines. I ensured that all piping and electrical components of various systems could handle the stress and strain of all sea and combat situations.
+                            </div>
+                        </div>
+                        <div class="image-side"><img src="Pictures/NNS.jpg"></div>
+                    </li>
+                    <li class="items">
+                        <div class="image-side"><img src="https://online.norwich.edu/sites/default/files/styles/resource_standard_hero/public/content/resources/header/nu_mce_how_to_become_a_structural_engineer.jpg?itok=QcYYbyeX" alt="Structrual Engineering"></div>
+                        <div class="info-side"> 
+                            <div class="info-header"><b>Newport News Shipbuilding: Structrual Engineer</b></div>
+                            <div class="info-body">As a structural engineer, I worked upon the Navy's newest class of submarine, Columbia. My main project created a structurally sound platform to ensure a 600 ton section of the submarine could be safely stored and operated on for building. I also worked on various structures for various component transfers, such as loading of pumps and valves.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="info-side" left>
+                            <div class="info-header"><b>Newport News Shipbuilding: Software Test Engineer</b></div>
+                            <div class="info-body">As a Software Test Engineer, I was responsible for testing of in house software that would control most valves, safety systems, and electrical components on board the Ford Class Aircraft Carriers. My primary responsibilities included developing test procedures to ensure that changes made to code and systems were functioning properly within the team. Once testing began, we would test each other's procedures, and provide any solutions for bugs that were found.
+                            </div>
+                        </div>
+                        <div class="image-side"><img src="https://www.herzing.edu/sites/default/files/2020-09/how-to-become-software-engineer.jpg" alt="Software Engineering"></div>
+                    </li>
+                    <li class="items">
+                        <div class="image-side"><img src="https://blogs.sw.siemens.com/wp-content/uploads/sites/2/2020/11/Feature-Modeling.jpg" alt="NX Model"></div>
+                        <div class="info-side">
+                            <div class="info-header"><b>Newport News Shipbuilding: Mechanical Engineer</b></div>
+                            <div class="info-body">I then moved on to be a Mechanical Engineer for our model based manufacturing department. As a Mechanical Engineer, I was a checker for 3D drawings of piping and ventilation for the aircraft carrier Enterprise. I interfaced with developers of 3D drawings to verify all dimensions, callouts, and all necessary information for the trades to construct the aircraft carrier.
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="info-side"left>
+                            <div class="info-header"><b>Newport News Shipbuilding: Model Based Engineer</b></div>
+                            <div class="info-body">My current job as a Systems Engineer has me upkeeping and maintaining the system database for two different classes of submarines. My team is responsible for troubleshooting and solving any known issues within the database in how it receives information. We will test any bug fixes, and move the program forward to allow for the value stream members to more easily and efficiently do there jobs.
+                            </div>
+                        </div>
+                        <div class="image-side"><img src="Pictures/Wedding image.jpg"></div>
+                    </li>
+                    <li class="items">
+                        <div class="image-side"><img src="Pictures/KITIK_LOGO_preview.png"></div>
+                        <div class="info-side">
+                            <div class="info-header"><b>KW Audio Productions: KiTiK</b></div>
+                            <div class="info-body">Along with Engineering and software, my last personal passion is music. I have created the alias of "KiTiK", which has released 25 songs on various platforms. Along with this, I offer sample packs for sale as well as mixing and mastering services. I have another website dedicated to this, which you can check out back at the top of the page!
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-                    <script>
-                    function storeInfo(e) {
-                        e.preventDefault();
-                        const name = document.getElementById('name').value;
-                        const email = document.getElementById('email').value;
-                        const message = document.getElementById('your-message').value;
+        <section class="blue" id="projects">
+            <div class="slider" data-slider>
+                <button class="prev" data-slider-button="previous">&#171;</button>
+                <button class="next" data-slider-button="nextone">&#187;</button>
+                <ul data-items>
+                    <li class="items" data-active>
+                        <div class="image-side"><iframe src="https://www.youtube.com/embed/4KnKfq6VFq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="info-side"> 
+                            <div class="info-header"><b>Partical Explosion</b> (C++)</div>
+                            <div class="info-body">Visual rendering using SDL2 to map particles onto the screen. The particles start at the center of the screen and spiral outward.The particles change color, with incorporated motion blur. <br> <br>Source Code can be found here: <a href="https://github.com/KiTiKDub/VisualParticalExplosion">https://github.com/KiTiKDub/VisualParticalExplosion</a></div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="info-side" left>
+                            <div class="info-header"><b>Simple EQ</b> (C++)</div>
+                            <div class="info-body">3 Band EQ that cut lows, highs, and a peak filter to boost or cut mids. Change filter slope on 4 different settings for lows and highs. Turn off and on any band. See the filter band in real time at the top of the window. <br> <br>Source Code can be found here: <a href="https://github.com/KiTiKDub/SimpleEQ"> https://github.com/KiTiKDub/SimpleEQ </a></div>
+                        </div>
+                        <div class="image-side"><video style="width:500px;" src="Videos/Simple EQ demo.mp4" autoplay muted controls loop></div>
+                    </li>
+                    <li class="items">
+                        <div class="image-side"><video style="width:500px;" src="Videos/comp showcase.mp4" autoplay muted controls loop></video></div>
+                        <div class="info-side"> 
+                            <div class="info-header"><b>3-band Compressor</b> (C++)</div>
+                            <div class="info-body">Multiband compressor with bands for low, mids, and highs. Each band has adjustable crossover frequencies to dial in exactly where you need your compression. <br><br>Each band has adjustable attack, release, threshold, and ratio, with the ability to mute, solo, and bypass the band.<br><br>Visualize your compression with a FFT spectrum analyzer to see where you may need to dial down your sound. Each band has the threshold mapped to the analyzer so you can see exactly when your compression will start. The analyzer will also show the response of the compression so you can see exactly how it is responding to your input. <br><br>Source code can be found here <a href="https://github.com/KiTiKDub/MBComp"> https://github.com/KiTiKDub/MBComp</a></div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="info-side" left> 
+                            <div class="info-header"><b>C$50 Finance Website</b> (Flask, Python, SQL, HTML, CSS)</div>
+                            <div class="info-body">I recently completed Harvard's CS50 online course and created a website using Flask that allows a user to sign in and trade stocks.<br><br>The website allows for the searching of any stock on the exchange, and a history of searches. The user has a page to buy stocks, sell stocks, and the home page allows you to see your current portfolio, the cash on hand, and the total value. There is also a page to add money to your balance. <br><br> Check out the attached video for a full look at the site!</div>
+                        </div>
+                        <div class="image-side"><iframe src="https://www.youtube.com/embed/mXC-JECjWfM" title="Finance Website Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    </li>
+            </div>
 
-                        Email.send({
-                            SecureToken : "",
-                            To : 'kitikdub@gmail.com',
-                            From : email.value,
-                            Subject : "Contact Form",
-                            Body : message.value
-                        }).then(
-                        message => alert(message)
-                        );
-                        
-                    }
-                        
-                    </script>
-        <h1>Kyle Whaley</h1>
-        <h2><a href="https://www.linkedin.com/in/kyle-whaley5/" target="blank">LinkedIn</a> </h2>
-        <h2><a href="https://soundcloud.com/kitikdub" target="blank">Soundcloud</a></h2>
-        <h2><a href="about me.html">About Me</a> </h2>
-        <h2><a href="store.html">Store</a></h2>
-        <embed src="Resume Oct 2021.pdf" width="100%" height="600"/>
+        </section>
 
-        -->
+        <section class="white" id="contact">
+            <div class="reach-out">
+                <div><img class="mail" src="Pictures/email.svg"></div>
+                <div>
+                    <div class="mail-header"><b>Contact Me</b></div>
+                    <div class="mail-info">Looking to get in touch? Check out my LinkedIn above or <a href='mailto:kylewhaley5@gmail.com'>email me!</a></div>
+                </div>
+            </div>
+
+        </section>
+
     </body>
 </html>
+
+<!--To do:
+    Record finance video 
+
+    Update bios to match closer to resume for career slides -> After submiting
+    Smooth Transitions -> V3
+    Add Screen viewer transition -> V3-->

@@ -13,24 +13,7 @@
 
         <link rel="stylesheet" href="CSS/landing-page.css">
         <link rel="stylesheet" href="CSS/general.css">
-
-        <!-- Meta Pixel Code -->
-            <script>
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '448855447359830');
-            fbq('track', 'PageView');
-            </script>
-            <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=448855447359830&ev=PageView&noscript=1"
-            /></noscript>
-        <!-- End Meta Pixel Code -->
+        <link rel="stylesheet" href="CSS/index.css">
 
     </head>
     <body>
@@ -55,70 +38,131 @@
             </div>
         </header>
 
-        <div class="top-center">
-            <div></div>
-            <div>
-                <div class="bottom-grid">
-                    <div class="music-header">
-                        KiTiK
-                        <hr>
-                    </div>
-                    <div>
+        <div class="background-picture" id="home">
+            <div class="animated-grid">
+                <div class="card"> 
+                    <div><img class="info" src="https://images.pexels.com/photos/8132787/pexels-photo-8132787.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <a href="#services"><div class="overlay">Services</div></a> 
+                    </div> 
+                </div>
+                <div class="card"> <img class="profile-pic" src="Pictures/KITIK_LOGO_NO_BKGD.png"> </div>
+                <div class="card"> 
+                    <div><img class="info" src="Pictures/Deep Space Cover.jpg">
+                        <a href="#store"><div class="overlay">Store</div></a>
                     </div>
                 </div>
             </div>
-            <div></div>
         </div>
 
-        <div class="main-page-container">
-            <div class="left-side-main"></div>
-            <div class="center-body">
-                <div class="video-side">
-                    <img class="profile-pic" src="Pictures/IMG_E4851.JPG">
-                    
-                </div>
-                <div class="information-side">
-                    What's going on Railbreakers!?
-                    <br> <br>
-                    My name is Kitik (Ki-Tik) and I'm a dubstep DJ/Producer from Norfolk, VA! 
-                    <br> <br>
-                    I've been producing for over two year now, and I like all things heavy! When it comes to my music, I like to experiment, and not to stick to one style of dubstep. I hope to always make something interesting and unique, instead of the same rhythms and basses you hear all the time. 
-                    <br> <br>
-                    As I've developed over the past year, I've really taken a liking to orchestral heavy music. Think Lorna Shore, or SWARM. I hope to incorporate that soon as I move forward on my music journey, and really come into my own sound.  
-                    <br> <br>
-                    I'm educated as a Mechanical Engineer, but I've always had a passion for music, and I don't want that passion to sit and waste away stuck in an office building all day. While I still have my day job, I hope to one day switch over to the world of music, and take the things I've learned from engineering and apply them in a new way to music.
-                    <br> <br>
-                    More recently I've been working on creating my own plugins (which you can find in my store!). My hope is to take the technical skills I learned in school to create a new avenue for my career, whether thats in music or not. I'm exciting to see where it takes me and I appreciate all the support from those who may stumble across this page!
-                    <br> <br>
-                    Click on the links above to check out my store, my socials, and my music! I hope you enjoy your visit here. 
-                    <br> <br>
-                    Have a question or would like to reach out to me? Email me <a href='mailto:kitikdub@gmail.com?Subject=Newsletter&body=Hello! I would like to subscribe to the Newsletter'>here!</a>
+        <section class="white" id="about">
+            <div class="items">
+                <div class="image-side"><img src="Pictures/IMG_E4851.JPG"></div>
+                <div class="info-side">
+                    <div class="info-header"> KiTiK (Ky-tik)</div>
+                    <div class="info-body">
+                        Hello All! My name is KiTiK. I'm a Mechanical Engineer, producer, software developer, business owner, husband, and tired. I like to do a little bit of everything and a little too much <br><br>
+                        I provide Mixing and mastering services, plug-in development, as well as sample packs for your own productions! <br><br>
+                        Scroll down to find my rates for audio engineering services, continue farther to see a preview of my store, or simply click the store tab up above <br><br>
+                        I look forward to serving you anyway I can! Feel free to check out the social links in the top right to get in touch!
+                    </div>
                 </div>
             </div>
-            <div class="right-side-main"></div>
-        </div>
+        </section>
 
-        <div class="bottom-center">
-            <div></div>
-            <div>
-                <div class="bottom-grid">
-                    <div class="music-header">
-                        My Music
-                        <hr>
+        <section class="red" id="services">
+            <div class="items">
+                <div class="image-side"><img src="https://images.pexels.com/photos/8132787/pexels-photo-8132787.jpeg?auto=compress&cs=tinysrgb&w=600"></div>
+                <div class="info-side">
+                    <div class="info-header">Mixing and Mastering Services</div>
+                    <div class="info-body">Need someone to work on your project? I provide competitive rates and will work closely with you to make sure your song comes to life.*
+                        <div class="services">
+                            <div class="services-column">
+                                <div><b>Mixing</b></div>
+                                <p>
+                                    What you will get: <br><br>
+                                    1 mixed song, up to 50 tracks <br>
+                                    2 Free revisions <br>
+                                    Completion within 5 business days
+                                </p>
+                                <div class="price">$50</div>
+                            </div>
+                            <div class="services-column">
+                                <div><b>Mastering</b></div>
+                                <p>
+                                    What you will get: <br><br>
+                                    1 mastered song <br>
+                                    2 Free revisions <br>
+                                    Completion within 3 business days
+                                </p>
+                                <div class="price">$25</div>
+                            </div>
+                            <div class="services-column">
+                                <div><b>Mix & Master Bundle</b></div>
+                                <p>
+                                    What you will get: <br><br>
+                                    1 mix & mastered song <br>
+                                    2 Free revisions <br>
+                                    Completion within 5 business days
+                                </p>
+                                <div class="price">$60</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="music-embed">
-                        <iframe width="60%" height="800" scrolling="yes" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1438255420&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <p>*reach out on Twitter for services</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="white" id="store">
+            <div class="items">
+                <div class="image-side"><img src="Pictures/Deep Space Cover.jpg"></div>
+                <div class="info-side">
+                    <div class="info-header"><a href="store.html">The KiTiK Store</a></div>
+                    <div class="info-body">Looking for a missing element? Too lazy to watch your 100th Serum tutorial? Head on over to the store and check out my latest creations! Here's what you could be getting:
+                        <div class="services">
+                            <div class="services-column">
+                                <div><b>Fallout</b></div>
+                                <p>
+                                    Sample Pack with 31 samples <br>
+                                    15 bass shots <br>
+                                    3 Serum presets <br>
+                                </p>
+                                <a href="Buy Pages/FalloutBuy.html"><img class="mini-pic" src="Pictures/Fallout Cover Art.png"></a>
+                                <div class="price">$5</div>
+                            </div>
+                            <div class="services-column">
+                                <div><b>Pendulum</b></div>
+                                <p>
+                                    20 Presets <br>
+                                    Bass Patches <br>
+                                    Lead Patches <br>
+                                </p>
+                                <a href="Buy Pages/PendulumBuy.html"><img class="mini-pic" src="Pictures/pendulum Cover.png"></a>
+                                <div class="price">$10</div>
+                            </div>
+                            <div class="services-column">
+                                <div><b>Multiband Compressor</b></div>
+                                <p>
+                                    Spectrum Analyzer Compressor <br>
+                                    3 adjustable bands <br>
+                                    Who needs OTT?  
+                                </p>
+                                <a href="Buy Pages/BuyMB.html"><img class="mini-pic" style="height: 180px" src="Pictures/mb-comp.gif"></a>
+                                <div class="price">FREE</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div></div>
-        </div>
+        </section>
 
     </body>
 </html>
 
+<!--
+    To Do:
+        Update background Photo 
 
-<!--Things to keep track of:
-    Test out ALL paid links -> Paypal Sandbox
-    Reach out to RA
-    -->
+        Add in database -> V3
+        Figure out Deep Space Link -> V3
+-->
