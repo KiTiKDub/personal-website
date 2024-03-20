@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
-    column-gap: 40px; 
-    row-gap: 10px;  
+    column-gap: 100px; 
+    row-gap: 25px;
+    padding-top: 10px;  
 }
 
 .play-button {

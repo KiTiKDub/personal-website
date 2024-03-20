@@ -93,36 +93,36 @@
             </a>
         </div>
         <div class="card">
-            <a href="Kalimba Free.html">
-                <div class="image-overlay">
-                    <div>Kalimba Vacation</div>
-                    <div class="sub-text">Sample Pack (Lite)</div>
-                </div>
-            </a>
+          <a href="Full Kalimba Pack.html">
+            <div class="image-overlay">
+              <div>Kalimba Vacation</div>
+              <div class="sub-text">Sample Pack</div>
+            </div>
+          </a>
         </div>
         <div class="card">
-            <a href="Full Kalimba Pack.html">
-                <div class="image-overlay">
-                    <div>Kalimba Vacation</div>
-                    <div class="sub-text">Sample Pack</div>
-                </div>
-            </a>
+          <a href="UnoBuy.html">
+            <div class="image-overlay">
+              <div>Uno</div>
+              <div class="sub-text">Analog Sample Pack</div>
+            </div>
+          </a>
         </div>
         <div class="card">
-            <a href="BuyMB.html">
-                <div class="image-overlay">
-                    <div>MultiBand</div>
-                    <div class="sub-text">Compressor</div>
-                </div>
-            </a>
+          <a href="DawnBuy.html">
+            <div class="image-overlay">
+              <div>Dawn</div>
+              <div class="sub-text">Snare Sample Pack</div>
+            </div>
+          </a>
         </div>
         <div class="card">
-            <a href="BuyEQ.html">
-                <div class="image-overlay">
-                    <div>3-Band</div>
-                    <div class="sub-text">Equalizer</div>
-                </div>
-            </a>
+          <a href="DuskBuy.html">
+            <div class="image-overlay">
+              <div>Dusk</div>
+              <div class="sub-text">Kick Sample Pack</div>
+            </div>
+          </a>
         </div>
         <!-- <div class="card"><img src="Pictures/icons8-instagram.svg"> </div>
         <div class="card">12</div>
@@ -161,7 +161,7 @@
                       </div>
                 </div>
                 <div class="information-side">
-                    <b><u>POTIONS - $10</u></b> <br> <br>
+                    <b><u>POTIONS</u></b> <br> <br>
                     Save you track with the secret serum found in <b>POTIONS</b>. <br> <br>
                     Tracks start out great, but before you know it, you are down a path you can't get out of, unsure of what to do bring it back. Save your track with the Serum in <B>POTIONS</B>, a preset pack for Serum  <br> <br>
                     Inside you will find 20 Presets that can be just what you need to get your track back, or to even save it before it is lost <br> <br>
@@ -174,53 +174,11 @@
                         <li>Experimental Patches</li>
                         <li>Lead Patches</li>
                     </ul> <br> <hr> <br> <br> <br>
-                    <div id="smart-button-container">
-                        <div style="text-align: center;">
-                          <div id="paypal-button-container"></div>
-                        </div>
-                      </div>
+                    <a href="https://kwhaley5.gumroad.com/l/stsas">
+                      <button class="download-button" type="button">Download Potions at
+                        <b style="color:rgb(195, 26, 26)">Gumroad</b></button>
         </div>
     </section>
-
-    
-<script>
-    function initPayPalButton() {
-        paypal.Buttons({
-            style: {
-            shape: 'rect',
-            color: 'gold',
-            layout: 'vertical',
-            label: 'paypal',
-            
-            },
-    
-            createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{"description":"Potions Sample Pack","amount":{"currency_code":"USD","value":9.99}}]
-            });
-            },
-    
-            onApprove: function(data, actions) {
-            return actions.order.capture().then(function(orderData) {
-                
-                // Full available details
-                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-    
-                // Show a success message within this page, e.g.
-                const element = document.getElementById('paypal-button-container');
-                element.innerHTML = '';
-                element.innerHTML = '<h3>Thank you for your payment! Download <a href="../Seconday Pages/PotionsDownload.html"> here</h3>';
-
-            });
-            },
-    
-            onError: function(err) {
-            console.log(err);
-            }
-        }).render('#paypal-button-container');
-        }
-        initPayPalButton();
-</script>
 
 <script>
     var playBtn = document.getElementById("playBtn")

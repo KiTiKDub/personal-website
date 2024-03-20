@@ -93,14 +93,6 @@
             </a>
         </div>
         <div class="card">
-            <a href="Kalimba Free.html">
-                <div class="image-overlay">
-                    <div>Kalimba Vacation</div>
-                    <div class="sub-text">Sample Pack (Lite)</div>
-                </div>
-            </a>
-        </div>
-        <div class="card">
             <a href="Full Kalimba Pack.html">
                 <div class="image-overlay">
                     <div>Kalimba Vacation</div>
@@ -109,18 +101,26 @@
             </a>
         </div>
         <div class="card">
-            <a href="BuyMB.html">
+            <a href="UnoBuy.html">
                 <div class="image-overlay">
-                    <div>MultiBand</div>
-                    <div class="sub-text">Compressor</div>
+                    <div>Uno</div>
+                    <div class="sub-text">Analog Sample Pack</div>
                 </div>
             </a>
         </div>
         <div class="card">
-            <a href="BuyEQ.html">
+            <a href="DawnBuy.html">
                 <div class="image-overlay">
-                    <div>3-Band</div>
-                    <div class="sub-text">Equalizer</div>
+                    <div>Dawn</div>
+                    <div class="sub-text">Snare Sample Pack</div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="DuskBuy.html">
+                <div class="image-overlay">
+                    <div>Dusk</div>
+                    <div class="sub-text">Kick Sample Pack</div>
                 </div>
             </a>
         </div>
@@ -136,7 +136,7 @@
                     <img class="fallout-vid" src="../Pictures/Landscape.png"></img>
                 </div>
                 <div class="information-side">
-                    <b><u>LANDSCAPES - $15</u></b> <br> <br>
+                    <b><u>LANDSCAPES</u></b> <br> <br>
                     Refresh your sound with the wavetables from <b>LANDSCAPES</b>.   <br> <br>
                     Looking for inspiration for the start of a new track? How about 50? Landscapes can be the new starting point on your sound design journey. <br> <br>
                     Let <b>LANDSCAPES</b> be your converted van into the journeys of the wilderness <br> <br>
@@ -149,53 +149,10 @@
                         <li>10+ Fourier Transform Tables</li>
                         <li>15+ Landscape inspired Soundscapes</li>
                     </ul> <hr> <br>
-                    <div id="smart-button-container">
-                        <div style="text-align: center;">
-                          <div id="paypal-button-container"></div>
-                        </div>
-                      </div>
+                    <a href="https://kwhaley5.gumroad.com/l/fvidp">
+                        <button class="download-button" type="button">Download Landscapes at
+                            <b style="color:rgb(195, 26, 26)">Gumroad</b></button>
         </div>
     </section>
-
-    
-<script>
-    function initPayPalButton() {
-        paypal.Buttons({
-            style: {
-            shape: 'rect',
-            color: 'gold',
-            layout: 'vertical',
-            label: 'paypal',
-            
-            },
-    
-            createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{"description":"Landscapes Sample Pack","amount":{"currency_code":"USD","value":14.99}}]
-            });
-            },
-
-            onApprove: function(data, actions) {
-            return actions.order.capture().then(function(orderData) {
-                
-                // Full available details
-                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-    
-                // Show a success message within this page, e.g.
-                const element = document.getElementById('paypal-button-container');
-                element.innerHTML = '';
-                element.innerHTML = '<h3>Thank you for your payment! Download <a href="../Seconday Pages/LandscapesDownload.html"> here</h3>';
-            });
-            },
-    
-            onError: function(err) {
-            console.log(err);
-            }
-        }).render('#paypal-button-container');
-        }
-        initPayPalButton();
-</script>
-    
-
     </body>
 </html>
