@@ -123,3 +123,20 @@
 p {
     font-family: 'Oswald', sans-serif;
 }
+
+a:link{
+    color: white;
+}
+
+a:visited
+{
+    color: white;
+}
+
+.store-link {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    animation: nameBlur 1000ms ease-out;
+    animation-fill-mode: backwards;
+}
